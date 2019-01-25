@@ -2,7 +2,7 @@ function myFunction() {
 	
 	var x = document.getElementById("val").value;
 	
-	var y = document.getElementsByClassName("image");
+	var y = document.getElementsByClassName("image");	
 	
 	
 	for(var i = 0; i < y.length; i++) {
@@ -13,7 +13,7 @@ function myFunction() {
 		
 		 if(x === z[0].innerHTML) {
 		 	var s = y[i].getElementsByClassName("abc")[0].src;
-		 	document.getElementById("ab").innerHTML = "";
+		 	document.getElementById("ab").display = "none";
 		 	var m = new Image(200,200);
 		 	m.src = s;
 		 	document.body.appendChild(m);
