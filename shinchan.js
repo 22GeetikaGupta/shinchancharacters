@@ -1,6 +1,7 @@
 function myFunction() {
 	
 	var x = document.getElementById("val").value;
+	console.log(x);
 	
 	var y = document.getElementsByClassName("image");	
 	
@@ -9,14 +10,22 @@ function myFunction() {
 		
 		var z = y[i].getElementsByClassName("nam");
 
-
-		
+            
 		 if(x === z[0].innerHTML) {
-		 	var s = y[i].getElementsByClassName("abc")[0].src;
-		 	document.getElementById("ab").display = "none";
-		 	var m = new Image(200,200);
-		 	m.src = s;
-		 	document.body.appendChild(m);
-		 }
+		 	 	y[i].style.visibility = "visible";
+		 	}
+
+        else if(x.length === 0) {
+        	var m = document.getElementsByClassName("image");
+
+                for(var j=0; j < m.length; j++){
+                  m[j].style.visibility = "visible";
+            }
+        }
+
+        else {
+        	y[i].style.visibility = "hidden";
+        }
 	}
+
 }		
