@@ -12,19 +12,19 @@ function myFunction() {
 
             
 		 if(x === z[0].innerHTML) {
-		 	 	y[i].style.visibility = "visible";
+		 	 	y[i].style.display = "block";
 		 	}
 
         else if(x.length === 0) {
         	var m = document.getElementsByClassName("image");
 
                 for(var j=0; j < m.length; j++){
-                  m[j].style.visibility = "visible";
+                  m[j].style.display = "block";
             }
         }
 
         else {
-        	y[i].style.visibility = "hidden";
+        	y[i].style.display = "none";
         }
 	}
 
