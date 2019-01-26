@@ -11,8 +11,14 @@ function myFunction() {
 		var z = y[i].getElementsByClassName("nam");
 
             
+<<<<<<< HEAD
+		 if(z[0].innerHTML.includes(x)) {
+		 	 	y[i].style.display = "block";
+
+=======
 		 if(x === z[0].innerHTML) {
 		 	 	y[i].style.display = "block";
+>>>>>>> 8311c544e5c849d24aa4b237cbc2c430437d2c7a
 		 	}
 
         else if(x.length === 0) {
